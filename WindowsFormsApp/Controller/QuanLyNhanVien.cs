@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WindowsFormsApp.Models;
 
 namespace WindowsFormsApp.Controller
 {
@@ -13,6 +14,17 @@ namespace WindowsFormsApp.Controller
 
         public QuanLyNhanVien()
         {
+        }
+        public List<NhanVien> getListNV1()
+        {
+            List<NhanVien> list = new List<NhanVien>();
+            DataTable data = DataProvider.Instance.ExecuteQuery("select * from NhanVien");
+            foreach (DataRow item in data.Rows)
+            {
+                NhanVien nv = new NhanVien(item);
+                list.Add(nv);
+            }
+            return list;
         }
 
         public static QuanLyNhanVien Intance

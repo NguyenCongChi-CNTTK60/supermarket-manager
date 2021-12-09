@@ -99,14 +99,13 @@ namespace WindowsFormsApp
         }
 
 
-        private void btnLamMoi_Click_1(object sender, EventArgs e)
+       
+        private void txtTimKiem_TextChanged_1(object sender, EventArgs e)
         {
-            txtMaNV.Text = "";
-            txtSDT.Text = "";
-            txtHoTen.Text = "";
+
         }
 
-        private void btnSua_Click_1(object sender, EventArgs e)
+        private void btnSua_Click(object sender, EventArgs e)
         {
             if (dgvThongTinNhanVien.SelectedCells.Count > 0)
             {
@@ -118,7 +117,7 @@ namespace WindowsFormsApp
             }
         }
 
-        private void btnXoa_Click_1(object sender, EventArgs e)
+        private void btnXoa_Click(object sender, EventArgs e)
         {
             if (QuanLyNhanVien.Intance.xoaNV(txtMaNV.Text))
             {
@@ -127,5 +126,19 @@ namespace WindowsFormsApp
                 LoadData();
             }
         }
+
+
+
+
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            txtMaNV.Text = "";
+            txtSDT.Text = "";
+            txtHoTen.Text = "";
+        }
+
+
+
+       
     }
 }

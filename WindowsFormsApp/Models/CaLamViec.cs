@@ -4,6 +4,7 @@ namespace WindowsFormsApp.Models
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
+    using System.Data;
     using System.Data.Entity.Spatial;
 
     [Table("CaLamViec")]
@@ -25,5 +26,19 @@ namespace WindowsFormsApp.Models
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiTietCLV> ChiTietCLVs { get; set; }
+
+
+        public CaLamViec (DataRow row)
+        {
+
+            this.MaCLV = row["MaCLV"].ToString();
+            this.Ca = row["Ca"].ToString();
+
+        }
+
+
+
+      
+
     }
 }

@@ -12,7 +12,7 @@ namespace WindowsFormsApp.Controller
         string str;
         public Chuoiketnoi()
         {
-            str = @"Data Source=DESKTOP-RNOPI29;Initial Catalog=QuanLySieuThi;User ID=sa;Password=123";
+            str = @"Data Source=DESKTOP-LRQ8VCB\SQLEXPRESS;Initial Catalog=QuanLySieuThi;Integrated Security=True";
         }
 
         public SqlConnection sqlConnection()

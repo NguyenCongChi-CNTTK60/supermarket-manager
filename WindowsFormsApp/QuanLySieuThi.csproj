@@ -189,6 +189,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\QuanLyCaLamViec.cs" />
     <Compile Include="UC_NhapHang.cs">
       <SubType>UserControl</SubType>
     </Compile>

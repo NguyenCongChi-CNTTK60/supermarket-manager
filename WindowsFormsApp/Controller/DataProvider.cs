@@ -20,7 +20,7 @@ namespace WindowsFormsApp.Controller
         }
 
         private DataProvider() { }
-        private string connectionSTR = @"Data Source=desktop-rnopi29;Initial Catalog=QuanLySieuThi;User ID=sa;Password=123";
+        private string connectionSTR = @"Data Source=DESKTOP-LRQ8VCB\SQLEXPRESS;Initial Catalog=QLSieuThi;Integrated Security=True";
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {
             DataTable data = new DataTable();

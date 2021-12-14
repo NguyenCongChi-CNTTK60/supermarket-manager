@@ -189,5 +189,16 @@ namespace WindowsFormsApp
             else
                 LoadData();
         }
+
+        private void dgvThongTinNCC_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            int indexx;
+            indexx = e.RowIndex;
+            txtMaNCC.Text = dgvThongTinNCC.Rows[indexx].Cells[0].Value.ToString();
+            txtTenNCC.Text = dgvThongTinNCC.Rows[indexx].Cells[1].Value.ToString();
+            txtDiaChi.Text = dgvThongTinNCC.Rows[indexx].Cells[2].Value.ToString();
+            txtSDT.Text = dgvThongTinNCC.Rows[indexx].Cells[3].Value.ToString();
+            txtEmail.Text = dgvThongTinNCC.Rows[indexx].Cells[4].Value.ToString();
+        }
     }
 }

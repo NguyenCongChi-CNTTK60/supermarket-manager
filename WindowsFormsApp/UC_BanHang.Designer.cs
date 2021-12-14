@@ -88,7 +88,7 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(23, 166);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 25);
+            this.label1.Size = new System.Drawing.Size(101, 29);
             this.label1.TabIndex = 2;
             this.label1.Text = "Mã MH :";
             // 
@@ -100,7 +100,7 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(23, 229);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 25);
+            this.label2.Size = new System.Drawing.Size(111, 29);
             this.label2.TabIndex = 2;
             this.label2.Text = "Tên MH :";
             // 
@@ -112,7 +112,7 @@
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(28, 300);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(108, 25);
+            this.label5.Size = new System.Drawing.Size(128, 29);
             this.label5.TabIndex = 2;
             this.label5.Text = "Số Lượng :";
             // 
@@ -124,7 +124,7 @@
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(28, 366);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 25);
+            this.label6.Size = new System.Drawing.Size(62, 29);
             this.label6.TabIndex = 2;
             this.label6.Text = "Giá :";
             // 
@@ -168,7 +168,7 @@
             this.txtSDT.Location = new System.Drawing.Point(189, 26);
             this.txtSDT.MaxLength = 10;
             this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(284, 30);
+            this.txtSDT.Size = new System.Drawing.Size(284, 35);
             this.txtSDT.TabIndex = 196;
             this.txtSDT.TextChanged += new System.EventHandler(this.txtSDT_TextChanged_1);
             // 
@@ -180,7 +180,7 @@
             this.label9.ForeColor = System.Drawing.Color.Maroon;
             this.label9.Location = new System.Drawing.Point(218, 60);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(19, 29);
+            this.label9.Size = new System.Drawing.Size(22, 35);
             this.label9.TabIndex = 195;
             this.label9.Text = ":";
             // 
@@ -191,7 +191,7 @@
             this.lblMakh.ForeColor = System.Drawing.Color.White;
             this.lblMakh.Location = new System.Drawing.Point(168, 74);
             this.lblMakh.Name = "lblMakh";
-            this.lblMakh.Size = new System.Drawing.Size(36, 22);
+            this.lblMakh.Size = new System.Drawing.Size(44, 25);
             this.lblMakh.TabIndex = 11;
             this.lblMakh.Text = "UN";
             // 
@@ -202,7 +202,7 @@
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(24, 31);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(128, 25);
+            this.label4.Size = new System.Drawing.Size(149, 29);
             this.label4.TabIndex = 8;
             this.label4.Text = "NHẬP SĐT:";
             // 
@@ -213,7 +213,7 @@
             this.txtTenKH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(28)))), ((int)(((byte)(36)))));
             this.txtTenKH.Location = new System.Drawing.Point(243, 60);
             this.txtTenKH.Name = "txtTenKH";
-            this.txtTenKH.Size = new System.Drawing.Size(162, 32);
+            this.txtTenKH.Size = new System.Drawing.Size(188, 38);
             this.txtTenKH.TabIndex = 7;
             this.txtTenKH.Text = "UNKNOW NAME";
             // 
@@ -328,6 +328,7 @@
             this.txtTienkhachdua.Size = new System.Drawing.Size(292, 35);
             this.txtTienkhachdua.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtTienkhachdua.TabIndex = 224;
+            this.txtTienkhachdua.TextChanged += new System.EventHandler(this.txtTienkhachdua_TextChanged_1);
             // 
             // label14
             // 
@@ -337,7 +338,7 @@
             this.label14.ForeColor = System.Drawing.Color.Black;
             this.label14.Location = new System.Drawing.Point(3, 120);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(133, 25);
+            this.label14.Size = new System.Drawing.Size(160, 29);
             this.label14.TabIndex = 199;
             this.label14.Text = "Tiền hoàn trả:";
             // 
@@ -349,7 +350,7 @@
             this.label13.ForeColor = System.Drawing.Color.Black;
             this.label13.Location = new System.Drawing.Point(3, 83);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(153, 25);
+            this.label13.Size = new System.Drawing.Size(183, 29);
             this.label13.TabIndex = 197;
             this.label13.Text = "Tiền khách đưa:";
             // 
@@ -361,7 +362,7 @@
             this.lbTienBangChu.ForeColor = System.Drawing.Color.Black;
             this.lbTienBangChu.Location = new System.Drawing.Point(196, 44);
             this.lbTienBangChu.Name = "lbTienBangChu";
-            this.lbTienBangChu.Size = new System.Drawing.Size(139, 26);
+            this.lbTienBangChu.Size = new System.Drawing.Size(159, 30);
             this.lbTienBangChu.TabIndex = 5;
             this.lbTienBangChu.Text = "Không đồng";
             // 
@@ -391,7 +392,7 @@
             this.lbTienBangSo.ForeColor = System.Drawing.Color.Black;
             this.lbTienBangSo.Location = new System.Drawing.Point(230, 12);
             this.lbTienBangSo.Name = "lbTienBangSo";
-            this.lbTienBangSo.Size = new System.Drawing.Size(87, 29);
+            this.lbTienBangSo.Size = new System.Drawing.Size(102, 32);
             this.lbTienBangSo.TabIndex = 0;
             this.lbTienBangSo.Text = "0 VNĐ";
             // 
@@ -402,7 +403,7 @@
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(38, 12);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(138, 29);
+            this.label8.Size = new System.Drawing.Size(160, 32);
             this.label8.TabIndex = 0;
             this.label8.Text = "Tổng tiền :";
             // 
@@ -466,7 +467,7 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(355, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(258, 40);
+            this.label7.Size = new System.Drawing.Size(306, 48);
             this.label7.TabIndex = 183;
             this.label7.Text = "QUẢN LÝ BÁN HÀNG";
             // 
@@ -486,7 +487,7 @@
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(28, 98);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 25);
+            this.label3.Size = new System.Drawing.Size(92, 29);
             this.label3.TabIndex = 189;
             this.label3.Text = "Mã HĐ:";
             // 
@@ -498,7 +499,7 @@
             this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Location = new System.Drawing.Point(177, 615);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(19, 29);
+            this.label12.Size = new System.Drawing.Size(22, 35);
             this.label12.TabIndex = 194;
             this.label12.Text = ":";
             // 
@@ -510,7 +511,7 @@
             this.label11.ForeColor = System.Drawing.Color.Maroon;
             this.label11.Location = new System.Drawing.Point(15, 615);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(101, 29);
+            this.label11.Size = new System.Drawing.Size(119, 35);
             this.label11.TabIndex = 193;
             this.label11.Text = "Người bán:";
             // 
@@ -522,7 +523,7 @@
             this.lblTennv.ForeColor = System.Drawing.Color.Black;
             this.lblTennv.Location = new System.Drawing.Point(196, 615);
             this.lblTennv.Name = "lblTennv";
-            this.lblTennv.Size = new System.Drawing.Size(19, 29);
+            this.lblTennv.Size = new System.Drawing.Size(22, 35);
             this.lblTennv.TabIndex = 192;
             this.lblTennv.Text = "t";
             // 
@@ -534,7 +535,7 @@
             this.lblManv.ForeColor = System.Drawing.Color.Black;
             this.lblManv.Location = new System.Drawing.Point(130, 623);
             this.lblManv.Name = "lblManv";
-            this.lblManv.Size = new System.Drawing.Size(24, 21);
+            this.lblManv.Size = new System.Drawing.Size(28, 25);
             this.lblManv.TabIndex = 191;
             this.lblManv.Text = "m";
             // 
@@ -546,7 +547,7 @@
             this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(23, 426);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(95, 29);
+            this.label10.Size = new System.Drawing.Size(113, 35);
             this.label10.TabIndex = 196;
             this.label10.Text = "Ngày bán:";
             // 
@@ -577,7 +578,7 @@
             this.txtTienkhachduafomart.ForeColor = System.Drawing.Color.White;
             this.txtTienkhachduafomart.Location = new System.Drawing.Point(155, 551);
             this.txtTienkhachduafomart.Name = "txtTienkhachduafomart";
-            this.txtTienkhachduafomart.Size = new System.Drawing.Size(266, 23);
+            this.txtTienkhachduafomart.Size = new System.Drawing.Size(266, 28);
             this.txtTienkhachduafomart.TabIndex = 199;
             // 
             // hangHoaBindingSource
@@ -658,6 +659,7 @@
             this.cmbMaMH.Size = new System.Drawing.Size(292, 36);
             this.cmbMaMH.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.cmbMaMH.TabIndex = 222;
+            this.cmbMaMH.SelectedIndexChanged += new System.EventHandler(this.cmbMaMH_SelectedIndexChanged);
             // 
             // cmbTenmh
             // 

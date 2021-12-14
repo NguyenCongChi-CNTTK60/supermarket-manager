@@ -629,7 +629,6 @@ C:\Users\Nguyen Cong Chi\Desktop\supermarket-manager\WindowsFormsApp\obj\Debug\W
 C:\Users\Nguyen Cong Chi\Desktop\supermarket-manager\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormInHoaDon.resources
 C:\Users\Nguyen Cong Chi\Desktop\supermarket-manager\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormNhapHang.resources
 C:\Users\Nguyen Cong Chi\Desktop\supermarket-manager\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormReport.resources
-C:\Users\Nguyen Cong Chi\Desktop\supermarket-manager\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormSDT.resources
 C:\Users\Nguyen Cong Chi\Desktop\supermarket-manager\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormThongTinHangMoi.resources
 C:\Users\Nguyen Cong Chi\Desktop\supermarket-manager\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormThongTinNhanVien.resources
 C:\Users\Nguyen Cong Chi\Desktop\supermarket-manager\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormTrangChu.resources
@@ -642,14 +641,12 @@ C:\Users\Nguyen Cong Chi\Desktop\supermarket-manager\WindowsFormsApp\obj\Debug\W
 C:\Users\Nguyen Cong Chi\Desktop\supermarket-manager\WindowsFormsApp\obj\Debug\WindowsFormsApp.UC_KhoHang.resources
 C:\Users\Nguyen Cong Chi\Desktop\supermarket-manager\WindowsFormsApp\obj\Debug\WindowsFormsApp.UC_NhaCungCap.resources
 C:\Users\Nguyen Cong Chi\Desktop\supermarket-manager\WindowsFormsApp\obj\Debug\WindowsFormsApp.UC_NhanVien.resources
-C:\Users\Nguyen Cong Chi\Desktop\supermarket-manager\WindowsFormsApp\obj\Debug\WindowsFormsApp.UC_NhapHang.resources
 C:\Users\Nguyen Cong Chi\Desktop\supermarket-manager\WindowsFormsApp\obj\Debug\WindowsFormsApp.UC_ThongKe.resources
 C:\Users\Nguyen Cong Chi\Desktop\supermarket-manager\WindowsFormsApp\obj\Debug\WindowsFormsApp.UC_ThongKeHangHoa.resources
 C:\Users\Nguyen Cong Chi\Desktop\supermarket-manager\WindowsFormsApp\obj\Debug\WindowsFormsApp.UC_ThongKeHoaDon.resources
 C:\Users\Nguyen Cong Chi\Desktop\supermarket-manager\WindowsFormsApp\obj\Debug\WindowsFormsApp.UC_ThongKeKhachHang.resources
 C:\Users\Nguyen Cong Chi\Desktop\supermarket-manager\WindowsFormsApp\obj\Debug\WindowsFormsApp.UC_ThongKePhieuNhap.resources
 C:\Users\Nguyen Cong Chi\Desktop\supermarket-manager\WindowsFormsApp\obj\Debug\WindowsFormsApp.UC_TrangChu.resources
-C:\Users\Nguyen Cong Chi\Desktop\supermarket-manager\WindowsFormsApp\obj\Debug\WindowsFormsApp.UC_XacNhanSDT.resources
 C:\Users\Nguyen Cong Chi\Desktop\supermarket-manager\WindowsFormsApp\obj\Debug\QuanLySieuThi.csproj.GenerateResource.cache
 C:\Users\Nguyen Cong Chi\Desktop\supermarket-manager\WindowsFormsApp\obj\Debug\RdlCompile.cache
 C:\Users\Nguyen Cong Chi\Desktop\supermarket-manager\WindowsFormsApp\obj\Debug\RdlCompile.compiled

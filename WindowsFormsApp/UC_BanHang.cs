@@ -124,7 +124,7 @@ namespace WindowsFormsApp
         {
             Models.KhachHang item = new Models.KhachHang();
 
-            string query = "select * from KhachHang where SDT ='" + id + "'";
+            string query = "select MaKH as [Mã khách hàng], TenKH as [Tên khách hàng], DiaChi as [Địa chỉ], SDT as [Số điện thoại], Email as [Email]  from KhachHang where SDT ='" + id + "'";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
             if (data.Rows.Count > 0)
             {
@@ -173,6 +173,8 @@ namespace WindowsFormsApp
                         break;
                     }
                 }
+
+
                 int gia = Int32.Parse(txtGia.Text) * Int32.Parse(txtSoLuong.Value.ToString());
                 if (!check)
                 {
@@ -266,6 +268,7 @@ namespace WindowsFormsApp
                     txtTenKH.Text = "UNKNOW NAME";
                     tongTien = 0;
                     txtMaHĐ.Text = Matudong();
+                    txtTienkhachdua.Text = "";
 
                 }
                 else
@@ -341,7 +344,7 @@ namespace WindowsFormsApp
 
         private void txtTienhoantra_TextChanged(object sender, EventArgs e)
         {
-              }
+        }
 
         private void txtSDT_TextChanged_1(object sender, EventArgs e)
         {
@@ -353,6 +356,22 @@ namespace WindowsFormsApp
             {
                 txtTenKH.Text = "Khách hàng mới";
             }
+        }
+
+        private void cmbMaMH_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbTenmh.SelectedIndex >= 0)
+            {
+                i = cmbTenmh.SelectedIndex;
+                //txtTenMH.Text = list[i].TenMH;
+                //txtDVT.Text = list[i].DonVi;
+                txtGia.Text = list[i].GiaBan.ToString();
+            }
+        }
+
+        private void txtTienkhachdua_TextChanged_1(object sender, EventArgs e)
+        {
+            Tinhtienhoantra();
         }
 
         private void btnThemMoiKH_Click(object sender, EventArgs e)

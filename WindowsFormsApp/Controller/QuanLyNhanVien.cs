@@ -51,7 +51,7 @@ namespace WindowsFormsApp.Controller
 
         public DataTable getListNV()
         {
-            string query = "select * from NhanVien";
+            string query = "select MaNV as [Mã nhân viên], TenHienThi as [Tên nhân viên], GioiTinh as [Giới tính], DiaChi as [Địa chỉ], SDT as [Số điện thoại], Quyen as [Quyền] from NhanVien";
             return DataProvider.Instance.ExecuteQuery(query);
         }
 

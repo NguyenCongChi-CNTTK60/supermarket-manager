@@ -43,7 +43,7 @@ namespace WindowsFormsApp.Controller
 
         public DataTable getListNV()
         {
-            string query = "select ChiTietCLV.MaNV,NhanVien.TenHienThi,Ca,NgayLam from ChiTietCLV inner join NhanVien on ChiTietCLV.MaNV = NhanVien.MaNV inner join CaLamViec on CaLamViec.MaCLV = ChiTietCLV.MaCLV order by NgayLam asc";
+            string query = "select ChiTietCLV.MaNV as [Mã nhân viên],NhanVien.TenHienThi as [Tên nhân viên],Ca,NgayLam as [Ngày làm] from ChiTietCLV inner join NhanVien on ChiTietCLV.MaNV = NhanVien.MaNV inner join CaLamViec on CaLamViec.MaCLV = ChiTietCLV.MaCLV order by NgayLam asc";
             return DataProvider.Instance.ExecuteQuery(query);
         }
 

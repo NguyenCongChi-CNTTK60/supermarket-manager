@@ -35,9 +35,9 @@ namespace WindowsFormsApp
      
         void LoadData()
         {
-            ClearBinding();
+            //ClearBinding();
             dgvThongTinNhanVien.DataSource = QuanLyNhanVien.Intance.getListNV();
-            loadBinding();
+            //loadBinding();
         }
 
         bool KiemTraNhap()
@@ -142,6 +142,18 @@ namespace WindowsFormsApp
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dgvThongTinNhanVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int indexx;
+            indexx = e.RowIndex;
+            txtMaNV.Text = dgvThongTinNhanVien.Rows[indexx].Cells[0].Value.ToString();
+            txtHoTen.Text = dgvThongTinNhanVien.Rows[indexx].Cells[1].Value.ToString();
+            cmbGioiTinh.Text = dgvThongTinNhanVien.Rows[indexx].Cells[2].Value.ToString();
+            txtDiaChi.Text = dgvThongTinNhanVien.Rows[indexx].Cells[3].Value.ToString();
+            txtSDT.Text = dgvThongTinNhanVien.Rows[indexx].Cells[4].Value.ToString();
+           
         }
     }
 }

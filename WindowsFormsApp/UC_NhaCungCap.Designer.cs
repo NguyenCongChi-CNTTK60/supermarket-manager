@@ -62,7 +62,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(19, 256);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 25);
+            this.label1.Size = new System.Drawing.Size(129, 29);
             this.label1.TabIndex = 78;
             this.label1.Text = "Tìm Kiếm :";
             // 
@@ -74,7 +74,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Location = new System.Drawing.Point(527, 89);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 25);
+            this.label3.Size = new System.Drawing.Size(103, 29);
             this.label3.TabIndex = 80;
             this.label3.Text = "Địa Chỉ :";
             // 
@@ -86,7 +86,7 @@
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label7.Location = new System.Drawing.Point(11, 195);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(118, 25);
+            this.label7.Size = new System.Drawing.Size(143, 29);
             this.label7.TabIndex = 79;
             this.label7.Text = "Điện Thoại :";
             // 
@@ -98,7 +98,7 @@
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label6.Location = new System.Drawing.Point(19, 89);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(100, 25);
+            this.label6.Size = new System.Drawing.Size(116, 29);
             this.label6.TabIndex = 77;
             this.label6.Text = "Mã NCC :";
             // 
@@ -110,7 +110,7 @@
             this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label8.Location = new System.Drawing.Point(548, 132);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(66, 25);
+            this.label8.Size = new System.Drawing.Size(80, 29);
             this.label8.TabIndex = 76;
             this.label8.Text = "Email:";
             // 
@@ -122,7 +122,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(22, 145);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 25);
+            this.label2.Size = new System.Drawing.Size(126, 29);
             this.label2.TabIndex = 81;
             this.label2.Text = "Tên NCC :";
             // 
@@ -195,7 +195,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(331, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(311, 40);
+            this.label4.Size = new System.Drawing.Size(369, 48);
             this.label4.TabIndex = 183;
             this.label4.Text = "QUẢN LÝ NHÀ CUNG CẤP";
             // 
@@ -448,6 +448,7 @@
             this.dgvThongTinNCC.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvThongTinNCC.Location = new System.Drawing.Point(37, 295);
             this.dgvThongTinNCC.Name = "dgvThongTinNCC";
+            this.dgvThongTinNCC.ReadOnly = true;
             this.dgvThongTinNCC.RowHeadersVisible = false;
             this.dgvThongTinNCC.RowHeadersWidth = 51;
             this.dgvThongTinNCC.RowTemplate.Height = 30;
@@ -467,7 +468,7 @@
             this.dgvThongTinNCC.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvThongTinNCC.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvThongTinNCC.ThemeStyle.HeaderStyle.Height = 40;
-            this.dgvThongTinNCC.ThemeStyle.ReadOnly = false;
+            this.dgvThongTinNCC.ThemeStyle.ReadOnly = true;
             this.dgvThongTinNCC.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvThongTinNCC.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvThongTinNCC.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -475,6 +476,7 @@
             this.dgvThongTinNCC.ThemeStyle.RowsStyle.Height = 30;
             this.dgvThongTinNCC.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
             this.dgvThongTinNCC.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvThongTinNCC.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvThongTinNCC_CellContentClick_1);
             // 
             // UC_NhaCungCap
             // 

@@ -17,14 +17,52 @@ namespace WindowsFormsApp
         {
             InitializeComponent();
             LoadListKH();
+            txtMaKH.Text = Matudong();
         }
 
         public void LoadListKH()
         {
             DataTable dt = QuanLyKhachHang.Intance.getListKH();
             dgvThongTinKhachHang.DataSource = dt;
-            loadBinding();
+            //loadBinding();
         }
+
+
+
+        private string Matudong()
+        {
+            string query = "select MaKH from KhachHang";
+            DataTable dt = DataProvider.Instance.ExecuteQuery(query);
+            string ma = "";
+            if (dt.Rows.Count <= 0)
+            {
+                ma = "KH01";
+            }
+            else
+            {
+                int k;
+                ma = "KH";
+                //k = Convert.ToInt32(dt.Rows[dt.Rows.Count - 1][0].ToString().Substring(2, 3));
+                k = dt.Rows.Count;
+                k++;
+                if (k < 10)
+                {
+                    ma = ma + "0";
+                }
+                else if (k >= 10 && k < 100)
+                {
+                    ma = ma + "";
+                }
+                else if (k >= 100 && k < 1000)
+                {
+                    ma = ma + "";
+                }
+                ma = ma + k.ToString();
+
+            }
+            return ma;
+        }
+
 
         void loadBinding()
         {
@@ -46,9 +84,16 @@ namespace WindowsFormsApp
 
         private void txtTimKiem_TextChanged(object sender, EventArgs e)
         {
-            dgvThongTinKhachHang.DataSource = QuanLyKhachHang.Intance.TimKiemKH(txtTimKiem.Text);
-            ClearBinding();
-            loadBinding();
+            if (!string.IsNullOrEmpty(txtTimKiem.Text))
+            {
+                DataTable dt = QuanLyKhachHang.Intance.TimKiemKH(txtTimKiem.Text);
+                //ClearBinding();
+                //loadBinding();
+                dgvThongTinKhachHang.DataSource = dt;
+                //LoadListKH();
+            }
+            else
+                LoadListKH();
         }
 
         private void btnLamMoi_Click_1(object sender, EventArgs e)
@@ -63,7 +108,7 @@ namespace WindowsFormsApp
             check = !check;
             if (check == true)
             {
-                txtMaKH.Text = "";
+                txtMaKH.Text = Matudong();
                 txtTenKH.Text = "";
                 txtSDT.Text = "";
                 txtEmail.Text = "";
@@ -96,6 +141,7 @@ namespace WindowsFormsApp
                         MessageBox.Show("Thêm khách hàng thành công!", "Thông báo");
                         ClearBinding();
                         LoadListKH();
+                        LamMoi();
                     }
                     else MessageBox.Show("Thất bại!", "Thông báo");
                 }
@@ -126,6 +172,7 @@ namespace WindowsFormsApp
                     btnThem.Enabled = true;
                     ClearBinding();
                     LoadListKH();
+                    LamMoi();
                 }
             }
         }
@@ -137,7 +184,29 @@ namespace WindowsFormsApp
                 MessageBox.Show("Xóa thành công!", "Thông báo");
                 ClearBinding();
                 LoadListKH();
+                LamMoi();
             }
+        }
+
+        private void dgvThongTinKhachHang_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int indexx;
+            indexx = e.RowIndex;
+            txtMaKH.Text = dgvThongTinKhachHang.Rows[indexx].Cells[0].Value.ToString();
+            txtTenKH.Text = dgvThongTinKhachHang.Rows[indexx].Cells[1].Value.ToString();
+            txtDiaChi.Text = dgvThongTinKhachHang.Rows[indexx].Cells[2].Value.ToString();
+            txtSDT.Text = dgvThongTinKhachHang.Rows[indexx].Cells[3].Value.ToString();
+            txtEmail.Text = dgvThongTinKhachHang.Rows[indexx].Cells[4].Value.ToString();
+        }
+
+
+        private void LamMoi()
+        {
+            txtMaKH.Text = Matudong();
+            txtTenKH.Text = "";
+            txtSDT.Text = "";
+            txtEmail.Text = "";
+            txtDiaChi.Text = "";
         }
     }
 }

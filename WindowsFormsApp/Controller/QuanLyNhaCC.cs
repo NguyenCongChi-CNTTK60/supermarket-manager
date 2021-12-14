@@ -23,7 +23,7 @@ namespace WindowsFormsApp.Controller
 
         public DataTable getListNCC()
         {
-            string query = "select * from NhaCungCap";
+            string query = "select MaNCC as [Mã NCC], TenNCC as [Tên NCC], DiaChi as [Địa chỉ],SDT as [Số điện thoại], Email from NhaCungCap";
             return DataProvider.Instance.ExecuteQuery(query);
         }
 

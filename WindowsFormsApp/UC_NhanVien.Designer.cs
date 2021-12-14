@@ -33,8 +33,17 @@ namespace WindowsFormsApp
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnMatKhau = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnTenTK = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblquyen = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.dgvThongTinNhanVien = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.label16 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -45,26 +54,17 @@ namespace WindowsFormsApp
             this.btnLamMoi = new Guna.UI2.WinForms.Guna2GradientButton();
             this.cmbGioiTinh = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtSDT = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtTimKiem = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtDiaChi = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtHoTen = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtMaNV = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.lblquyen = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.btnTenTK = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnMatKhau = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txtTimKiem = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongTinNhanVien)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -99,6 +99,143 @@ namespace WindowsFormsApp
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(970, 712);
             this.panel1.TabIndex = 0;
+            // 
+            // btnMatKhau
+            // 
+            this.btnMatKhau.BorderColor = System.Drawing.Color.Black;
+            this.btnMatKhau.BorderRadius = 10;
+            this.btnMatKhau.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.btnMatKhau.DefaultText = "";
+            this.btnMatKhau.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.btnMatKhau.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.btnMatKhau.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.btnMatKhau.DisabledState.Parent = this.btnMatKhau;
+            this.btnMatKhau.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.btnMatKhau.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnMatKhau.FocusedState.Parent = this.btnMatKhau;
+            this.btnMatKhau.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMatKhau.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnMatKhau.HoverState.Parent = this.btnMatKhau;
+            this.btnMatKhau.Location = new System.Drawing.Point(631, 269);
+            this.btnMatKhau.Name = "btnMatKhau";
+            this.btnMatKhau.PasswordChar = '\0';
+            this.btnMatKhau.PlaceholderText = "";
+            this.btnMatKhau.SelectedText = "";
+            this.btnMatKhau.ShadowDecoration.Parent = this.btnMatKhau;
+            this.btnMatKhau.Size = new System.Drawing.Size(212, 35);
+            this.btnMatKhau.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.btnMatKhau.TabIndex = 279;
+            // 
+            // btnTenTK
+            // 
+            this.btnTenTK.BorderColor = System.Drawing.Color.Black;
+            this.btnTenTK.BorderRadius = 10;
+            this.btnTenTK.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.btnTenTK.DefaultText = "";
+            this.btnTenTK.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.btnTenTK.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.btnTenTK.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.btnTenTK.DisabledState.Parent = this.btnTenTK;
+            this.btnTenTK.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.btnTenTK.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnTenTK.FocusedState.Parent = this.btnTenTK;
+            this.btnTenTK.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnTenTK.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnTenTK.HoverState.Parent = this.btnTenTK;
+            this.btnTenTK.Location = new System.Drawing.Point(631, 228);
+            this.btnTenTK.Name = "btnTenTK";
+            this.btnTenTK.PasswordChar = '\0';
+            this.btnTenTK.PlaceholderText = "";
+            this.btnTenTK.SelectedText = "";
+            this.btnTenTK.ShadowDecoration.Parent = this.btnTenTK;
+            this.btnTenTK.Size = new System.Drawing.Size(212, 35);
+            this.btnTenTK.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.btnTenTK.TabIndex = 278;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(595, 58);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(242, 40);
+            this.label6.TabIndex = 277;
+            this.label6.Text = "Thông tin tài khoản";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(153, 58);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(247, 40);
+            this.label7.TabIndex = 276;
+            this.label7.Text = "Thông tin nhân viên";
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label5.Location = new System.Drawing.Point(521, 238);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(94, 29);
+            this.label5.TabIndex = 275;
+            this.label5.Text = "Tên TK";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(521, 279);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(121, 29);
+            this.label3.TabIndex = 274;
+            this.label3.Text = "Mật khẩu :";
+            // 
+            // lblquyen
+            // 
+            this.lblquyen.AutoSize = true;
+            this.lblquyen.Font = new System.Drawing.Font("Sitka Banner", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblquyen.Location = new System.Drawing.Point(691, 311);
+            this.lblquyen.Name = "lblquyen";
+            this.lblquyen.Size = new System.Drawing.Size(137, 38);
+            this.lblquyen.TabIndex = 273;
+            this.lblquyen.Text = "Mã của bạn:";
+            this.lblquyen.Click += new System.EventHandler(this.lblquyen_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label1.Location = new System.Drawing.Point(510, 316);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(208, 29);
+            this.label1.TabIndex = 272;
+            this.label1.Text = "Quyền đăng nhập:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(631, 103);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(151, 124);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 269;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel3.Location = new System.Drawing.Point(455, 58);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(4, 300);
+            this.panel3.TabIndex = 268;
             // 
             // dgvThongTinNhanVien
             // 
@@ -136,6 +273,7 @@ namespace WindowsFormsApp
             this.dgvThongTinNhanVien.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvThongTinNhanVien.Location = new System.Drawing.Point(30, 363);
             this.dgvThongTinNhanVien.Name = "dgvThongTinNhanVien";
+            this.dgvThongTinNhanVien.ReadOnly = true;
             this.dgvThongTinNhanVien.RowHeadersVisible = false;
             this.dgvThongTinNhanVien.RowHeadersWidth = 51;
             this.dgvThongTinNhanVien.RowTemplate.Height = 30;
@@ -155,7 +293,7 @@ namespace WindowsFormsApp
             this.dgvThongTinNhanVien.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvThongTinNhanVien.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvThongTinNhanVien.ThemeStyle.HeaderStyle.Height = 40;
-            this.dgvThongTinNhanVien.ThemeStyle.ReadOnly = false;
+            this.dgvThongTinNhanVien.ThemeStyle.ReadOnly = true;
             this.dgvThongTinNhanVien.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvThongTinNhanVien.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvThongTinNhanVien.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -163,18 +301,7 @@ namespace WindowsFormsApp
             this.dgvThongTinNhanVien.ThemeStyle.RowsStyle.Height = 30;
             this.dgvThongTinNhanVien.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
             this.dgvThongTinNhanVien.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // label16
-            // 
-            this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label16.Location = new System.Drawing.Point(639, 8);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(102, 25);
-            this.label16.TabIndex = 266;
-            this.label16.Text = "Tìm kiếm :";
+            this.dgvThongTinNhanVien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvThongTinNhanVien_CellContentClick);
             // 
             // label11
             // 
@@ -184,7 +311,7 @@ namespace WindowsFormsApp
             this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label11.Location = new System.Drawing.Point(20, 289);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(110, 25);
+            this.label11.Size = new System.Drawing.Size(133, 29);
             this.label11.TabIndex = 264;
             this.label11.Text = "Điện thoại :";
             // 
@@ -196,7 +323,7 @@ namespace WindowsFormsApp
             this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label8.Location = new System.Drawing.Point(28, 248);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(82, 25);
+            this.label8.Size = new System.Drawing.Size(98, 29);
             this.label8.TabIndex = 263;
             this.label8.Text = "Địa chỉ :";
             // 
@@ -208,7 +335,7 @@ namespace WindowsFormsApp
             this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label14.Location = new System.Drawing.Point(41, 202);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(93, 25);
+            this.label14.Size = new System.Drawing.Size(113, 29);
             this.label14.TabIndex = 262;
             this.label14.Text = "Giới tính :";
             // 
@@ -220,7 +347,7 @@ namespace WindowsFormsApp
             this.label15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label15.Location = new System.Drawing.Point(32, 161);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(106, 25);
+            this.label15.Size = new System.Drawing.Size(125, 29);
             this.label15.TabIndex = 261;
             this.label15.Text = "Họ và tên :";
             // 
@@ -232,7 +359,7 @@ namespace WindowsFormsApp
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(46, 115);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 25);
+            this.label2.Size = new System.Drawing.Size(97, 29);
             this.label2.TabIndex = 260;
             this.label2.Text = "Mã NV :";
             // 
@@ -331,6 +458,10 @@ namespace WindowsFormsApp
             this.cmbGioiTinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbGioiTinh.HoverState.Parent = this.cmbGioiTinh;
             this.cmbGioiTinh.ItemHeight = 30;
+            this.cmbGioiTinh.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ ",
+            "Khác"});
             this.cmbGioiTinh.ItemsAppearance.Parent = this.cmbGioiTinh;
             this.cmbGioiTinh.Location = new System.Drawing.Point(140, 192);
             this.cmbGioiTinh.Name = "cmbGioiTinh";
@@ -364,32 +495,6 @@ namespace WindowsFormsApp
             this.txtSDT.Size = new System.Drawing.Size(282, 35);
             this.txtSDT.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtSDT.TabIndex = 255;
-            // 
-            // txtTimKiem
-            // 
-            this.txtTimKiem.BorderColor = System.Drawing.Color.Black;
-            this.txtTimKiem.BorderRadius = 10;
-            this.txtTimKiem.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTimKiem.DefaultText = "";
-            this.txtTimKiem.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTimKiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTimKiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTimKiem.DisabledState.Parent = this.txtTimKiem;
-            this.txtTimKiem.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTimKiem.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTimKiem.FocusedState.Parent = this.txtTimKiem;
-            this.txtTimKiem.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtTimKiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTimKiem.HoverState.Parent = this.txtTimKiem;
-            this.txtTimKiem.Location = new System.Drawing.Point(747, 8);
-            this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.PasswordChar = '\0';
-            this.txtTimKiem.PlaceholderText = "";
-            this.txtTimKiem.SelectedText = "";
-            this.txtTimKiem.ShadowDecoration.Parent = this.txtTimKiem;
-            this.txtTimKiem.Size = new System.Drawing.Size(204, 35);
-            this.txtTimKiem.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txtTimKiem.TabIndex = 254;
             // 
             // txtDiaChi
             // 
@@ -487,146 +592,47 @@ namespace WindowsFormsApp
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(329, 8);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(268, 40);
+            this.label4.Size = new System.Drawing.Size(317, 48);
             this.label4.TabIndex = 226;
             this.label4.Text = "QUẢN LÝ NHÂN VIÊN";
             // 
-            // lblquyen
+            // label16
             // 
-            this.lblquyen.AutoSize = true;
-            this.lblquyen.Font = new System.Drawing.Font("Sitka Banner", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblquyen.Location = new System.Drawing.Point(691, 311);
-            this.lblquyen.Name = "lblquyen";
-            this.lblquyen.Size = new System.Drawing.Size(115, 32);
-            this.lblquyen.TabIndex = 273;
-            this.lblquyen.Text = "Mã của bạn:";
-            this.lblquyen.Click += new System.EventHandler(this.lblquyen_Click);
+            this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label16.Location = new System.Drawing.Point(639, 8);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(125, 29);
+            this.label16.TabIndex = 266;
+            this.label16.Text = "Tìm kiếm :";
             // 
-            // label1
+            // txtTimKiem
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label1.Location = new System.Drawing.Point(510, 316);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(175, 25);
-            this.label1.TabIndex = 272;
-            this.label1.Text = "Quyền đăng nhập:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(631, 103);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(151, 124);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 269;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel3.Location = new System.Drawing.Point(455, 58);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(4, 300);
-            this.panel3.TabIndex = 268;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(521, 279);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 25);
-            this.label3.TabIndex = 274;
-            this.label3.Text = "Mật khẩu :";
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(521, 238);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 25);
-            this.label5.TabIndex = 275;
-            this.label5.Text = "Tên TK";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(153, 58);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(214, 35);
-            this.label7.TabIndex = 276;
-            this.label7.Text = "Thông tin nhân viên";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(595, 58);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(209, 35);
-            this.label6.TabIndex = 277;
-            this.label6.Text = "Thông tin tài khoản";
-            // 
-            // btnTenTK
-            // 
-            this.btnTenTK.BorderColor = System.Drawing.Color.Black;
-            this.btnTenTK.BorderRadius = 10;
-            this.btnTenTK.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.btnTenTK.DefaultText = "";
-            this.btnTenTK.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.btnTenTK.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.btnTenTK.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.btnTenTK.DisabledState.Parent = this.btnTenTK;
-            this.btnTenTK.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.btnTenTK.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.btnTenTK.FocusedState.Parent = this.btnTenTK;
-            this.btnTenTK.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnTenTK.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.btnTenTK.HoverState.Parent = this.btnTenTK;
-            this.btnTenTK.Location = new System.Drawing.Point(631, 228);
-            this.btnTenTK.Name = "btnTenTK";
-            this.btnTenTK.PasswordChar = '\0';
-            this.btnTenTK.PlaceholderText = "";
-            this.btnTenTK.SelectedText = "";
-            this.btnTenTK.ShadowDecoration.Parent = this.btnTenTK;
-            this.btnTenTK.Size = new System.Drawing.Size(212, 35);
-            this.btnTenTK.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.btnTenTK.TabIndex = 278;
-            // 
-            // btnMatKhau
-            // 
-            this.btnMatKhau.BorderColor = System.Drawing.Color.Black;
-            this.btnMatKhau.BorderRadius = 10;
-            this.btnMatKhau.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.btnMatKhau.DefaultText = "";
-            this.btnMatKhau.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.btnMatKhau.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.btnMatKhau.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.btnMatKhau.DisabledState.Parent = this.btnMatKhau;
-            this.btnMatKhau.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.btnMatKhau.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.btnMatKhau.FocusedState.Parent = this.btnMatKhau;
-            this.btnMatKhau.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnMatKhau.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.btnMatKhau.HoverState.Parent = this.btnMatKhau;
-            this.btnMatKhau.Location = new System.Drawing.Point(631, 269);
-            this.btnMatKhau.Name = "btnMatKhau";
-            this.btnMatKhau.PasswordChar = '\0';
-            this.btnMatKhau.PlaceholderText = "";
-            this.btnMatKhau.SelectedText = "";
-            this.btnMatKhau.ShadowDecoration.Parent = this.btnMatKhau;
-            this.btnMatKhau.Size = new System.Drawing.Size(212, 35);
-            this.btnMatKhau.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.btnMatKhau.TabIndex = 279;
+            this.txtTimKiem.BorderColor = System.Drawing.Color.Black;
+            this.txtTimKiem.BorderRadius = 10;
+            this.txtTimKiem.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTimKiem.DefaultText = "";
+            this.txtTimKiem.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTimKiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTimKiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTimKiem.DisabledState.Parent = this.txtTimKiem;
+            this.txtTimKiem.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTimKiem.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTimKiem.FocusedState.Parent = this.txtTimKiem;
+            this.txtTimKiem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTimKiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTimKiem.HoverState.Parent = this.txtTimKiem;
+            this.txtTimKiem.Location = new System.Drawing.Point(747, 8);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.PasswordChar = '\0';
+            this.txtTimKiem.PlaceholderText = "";
+            this.txtTimKiem.SelectedText = "";
+            this.txtTimKiem.ShadowDecoration.Parent = this.txtTimKiem;
+            this.txtTimKiem.Size = new System.Drawing.Size(204, 35);
+            this.txtTimKiem.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtTimKiem.TabIndex = 254;
             // 
             // UC_NhanVien
             // 
@@ -639,10 +645,10 @@ namespace WindowsFormsApp
             this.Size = new System.Drawing.Size(970, 712);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongTinNhanVien)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

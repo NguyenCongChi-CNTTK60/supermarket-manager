@@ -23,7 +23,7 @@ namespace WindowsFormsApp.Controller
 
         public DataTable getListKH()
         {
-            string query = "select KhachHang.MaKH,TenKH, DiaChi, SDT, Email from KhachHang";
+            string query = "select KhachHang.MaKH as[Mã khách hàng],TenKH as [Tên khách hàng], DiaChi as [Địa chỉ], SDT as [Số điện thoại], Email as [Email] from KhachHang";
             return DataProvider.Instance.ExecuteQuery(query);
         }
 
@@ -50,7 +50,7 @@ namespace WindowsFormsApp.Controller
 
         public DataTable TimKiemKH(string name)
         {
-            string query = string.Format("SELECT MaKH,TenKH, DiaChi, SDT, Email FROM KhachHang WHERE dbo.GetUnsignString(KhachHang.TenKH) LIKE N'%' + dbo.GetUnsignString(N'{0}') + '%'", name);
+            string query = string.Format("SELECT MaKH,TenKH, DiaChi, SDT, Email FROM KhachHang WHERE KhachHang.TenKH LIKE N'%"+name+ "%' or MaKH LIKE N'%" + name + "%'");
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
             return data;
         }

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbSoHoaDon = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -41,7 +41,6 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lbHangHoa = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.buniHoaDon = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -54,13 +53,14 @@
             this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse5 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse6 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
             this.guna2GradientPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -80,7 +80,7 @@
             this.lbSoHoaDon.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbSoHoaDon.Location = new System.Drawing.Point(17, 54);
             this.lbSoHoaDon.Name = "lbSoHoaDon";
-            this.lbSoHoaDon.Size = new System.Drawing.Size(155, 63);
+            this.lbSoHoaDon.Size = new System.Drawing.Size(184, 75);
             this.lbSoHoaDon.TabIndex = 12;
             this.lbSoHoaDon.Text = "1589";
             // 
@@ -92,7 +92,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(25, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 26);
+            this.label1.Size = new System.Drawing.Size(141, 30);
             this.label1.TabIndex = 11;
             this.label1.Text = "HÓA ĐƠN";
             // 
@@ -113,7 +113,7 @@
             this.lbSoKH.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbSoKH.Location = new System.Drawing.Point(16, 57);
             this.lbSoKH.Name = "lbSoKH";
-            this.lbSoKH.Size = new System.Drawing.Size(123, 63);
+            this.lbSoKH.Size = new System.Drawing.Size(146, 75);
             this.lbSoKH.TabIndex = 13;
             this.lbSoKH.Text = "150";
             // 
@@ -125,7 +125,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(22, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(170, 26);
+            this.label2.Size = new System.Drawing.Size(196, 30);
             this.label2.TabIndex = 12;
             this.label2.Text = "KHÁCH HÀNG";
             // 
@@ -146,7 +146,7 @@
             this.lbHangHoa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbHangHoa.Location = new System.Drawing.Point(25, 57);
             this.lbHangHoa.Name = "lbHangHoa";
-            this.lbHangHoa.Size = new System.Drawing.Size(91, 63);
+            this.lbHangHoa.Size = new System.Drawing.Size(108, 75);
             this.lbHangHoa.TabIndex = 14;
             this.lbHangHoa.Text = "50";
             // 
@@ -158,25 +158,9 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(31, 14);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(138, 26);
+            this.label3.Size = new System.Drawing.Size(159, 30);
             this.label3.TabIndex = 13;
             this.label3.Text = "HÀNG HÓA";
-            // 
-            // chart1
-            // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(32, 235);
-            this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Doanh Thu";
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(901, 365);
-            this.chart1.TabIndex = 11;
-            this.chart1.Text = "chart1";
             // 
             // buniHoaDon
             // 
@@ -262,15 +246,36 @@
             this.bunifuElipse6.ElipseRadius = 15;
             this.bunifuElipse6.TargetControl = this.lbSoKH;
             // 
+            // chart1
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(21, 224);
+            this.chart1.Name = "chart1";
+            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
+            series1.BorderWidth = 2;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.LabelBorderWidth = 3;
+            series1.Legend = "Legend1";
+            series1.Name = "Doanh Thu";
+            series1.YValuesPerPoint = 2;
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(916, 420);
+            this.chart1.TabIndex = 21;
+            this.chart1.Text = "chart1";
+            // 
             // UC_TrangChu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.chart1);
             this.Controls.Add(this.guna2GradientPanel3);
             this.Controls.Add(this.guna2GradientPanel2);
             this.Controls.Add(this.guna2GradientPanel1);
-            this.Controls.Add(this.chart1);
-            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_TrangChu";
             this.Size = new System.Drawing.Size(990, 690);
@@ -278,13 +283,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
             this.guna2GradientPanel2.ResumeLayout(false);
             this.guna2GradientPanel2.PerformLayout();
             this.guna2GradientPanel3.ResumeLayout(false);
             this.guna2GradientPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -296,7 +301,6 @@
         private System.Windows.Forms.Label lbSoKH;
         private System.Windows.Forms.Label lbHangHoa;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
@@ -312,5 +316,6 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse4;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse5;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse6;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }

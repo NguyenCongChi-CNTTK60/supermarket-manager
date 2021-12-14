@@ -39,16 +39,16 @@ namespace WindowsFormsApp
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(1285, 808);
+            this.reportViewer1.Size = new System.Drawing.Size(1269, 808);
             this.reportViewer1.TabIndex = 0;
             // 
-            // FormXemchitietphieunhap
+            // FormReportThongKe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1285, 808);
+            this.ClientSize = new System.Drawing.Size(1269, 808);
             this.Controls.Add(this.reportViewer1);
-            this.Name = "FormXemchitietphieunhap";
+            this.Name = "FormReportThongKe";
             this.Text = "FormXuatbaocaohanghoa";
             this.Load += new System.EventHandler(this.FormXuatbaocaohanghoa_Load);
             this.ResumeLayout(false);

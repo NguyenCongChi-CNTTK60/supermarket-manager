@@ -347,8 +347,8 @@
                   <TextRun>
                     <Value>=Fields!SDT.Value</Value>
                     <Style>
-                      <FontFamily>Sitka Banner</FontFamily>
-                      <FontSize>12pt</FontSize>
+                      <FontFamily>Cambria</FontFamily>
+                      <FontSize>11pt</FontSize>
                       <FontWeight>Normal</FontWeight>
                     </Style>
                   </TextRun>
@@ -431,8 +431,8 @@
                   <TextRun>
                     <Value>=Fields!NgayTao.Value</Value>
                     <Style>
-                      <FontFamily>Sitka Banner</FontFamily>
-                      <FontSize>12pt</FontSize>
+                      <FontFamily>Cambria</FontFamily>
+                      <FontSize>11pt</FontSize>
                       <FontWeight>Normal</FontWeight>
                     </Style>
                   </TextRun>
@@ -473,8 +473,8 @@
                   <TextRun>
                     <Value>=Fields!MaNV.Value</Value>
                     <Style>
-                      <FontFamily>Sitka Banner</FontFamily>
-                      <FontSize>12pt</FontSize>
+                      <FontFamily>Cambria</FontFamily>
+                      <FontSize>11pt</FontSize>
                       <FontWeight>Normal</FontWeight>
                     </Style>
                   </TextRun>
@@ -531,8 +531,8 @@
                   <TextRun>
                     <Value>=Fields!MaHD.Value</Value>
                     <Style>
-                      <FontFamily>Sitka Banner</FontFamily>
-                      <FontSize>12pt</FontSize>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>11pt</FontSize>
                       <FontWeight>Normal</FontWeight>
                     </Style>
                   </TextRun>
@@ -597,8 +597,8 @@
                   <TextRun>
                     <Value>=Parameters!Tienkhachdua.Value</Value>
                     <Style>
-                      <FontFamily>Sitka Display</FontFamily>
-                      <FontSize>12pt</FontSize>
+                      <FontFamily>Cambria</FontFamily>
+                      <FontSize>11pt</FontSize>
                       <FontWeight>Normal</FontWeight>
                       <Format>#,0.00'VND';(#,0.00'VND')</Format>
                     </Style>
@@ -640,8 +640,8 @@
                   <TextRun>
                     <Value>=Sum(Fields!SoLuong.Value*Fields!DonGia.Value,"DataSet1")</Value>
                     <Style>
-                      <FontFamily>Sitka Display</FontFamily>
-                      <FontSize>12pt</FontSize>
+                      <FontFamily>Cambria</FontFamily>
+                      <FontSize>11pt</FontSize>
                       <FontWeight>Normal</FontWeight>
                       <Format>#,0.00'VND';(#,0.00'VND')</Format>
                     </Style>
@@ -683,8 +683,8 @@
                   <TextRun>
                     <Value>=Parameters!Tienhoantra.Value</Value>
                     <Style>
-                      <FontFamily>Sitka Display</FontFamily>
-                      <FontSize>12pt</FontSize>
+                      <FontFamily>Cambria</FontFamily>
+                      <FontSize>11pt</FontSize>
                       <FontWeight>Normal</FontWeight>
                     </Style>
                   </TextRun>
@@ -917,7 +917,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!TenMH.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Sitka Banner</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1027,6 +1029,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>

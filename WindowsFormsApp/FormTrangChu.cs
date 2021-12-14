@@ -60,11 +60,13 @@ namespace WindowsFormsApp
             }
             else if (lblQuyen.Text == "Thủ kho")
             {
-                btnTrangChu.Enabled = false;
+               // btnTrangChu.Enabled = false;
                 btnKhachHang.Enabled = false;
                 btnNhanVien.Enabled = false;
                 btnThongKe.Enabled = false;
                 btnBanHang.Enabled = false;
+                btnCLV.Enabled = false;
+                
             }
             else if (lblQuyen.Text == "Bán hàng")
             {
@@ -72,6 +74,7 @@ namespace WindowsFormsApp
                 btnThongKe.Enabled = false;
                 btnKhoHang.Enabled = false;
                 btnNCC.Enabled = false;
+                btnCLV.Enabled = false;
             }
 
         }
@@ -122,7 +125,7 @@ namespace WindowsFormsApp
         {
             movesidePannel(btnNhanVien);
             UC_NhanVien nv = new UC_NhanVien();
-            addControlsToPanel(nv);
+            themUC(nv);
         }
 
         private void btnNCC_Click_1(object sender, EventArgs e)

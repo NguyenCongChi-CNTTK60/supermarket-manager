@@ -1,4 +1,4 @@
-namespace WindowsFormsApp.Models
+﻿namespace WindowsFormsApp.Models
 {
     using System;
     using System.Collections.Generic;
@@ -40,10 +40,10 @@ namespace WindowsFormsApp.Models
         public virtual ICollection<HoaDon> HoaDons { get; set; }
         public KhachHang(DataRow row)
         {
-            this.MaKH = row["MaKH"].ToString();
-            this.TenKH = row["TenKH"].ToString();
-            this.DiaChi = row["DiaChi"].ToString();
-            this.SDT = row["SDT"].ToString();
+            this.MaKH = row["Mã khách hàng"].ToString();
+            this.TenKH = row["Tên khách hàng"].ToString();
+            this.DiaChi = row["Địa chỉ"].ToString();
+            this.SDT = row["Số điện thoại"].ToString();
             this.Email = row["Email"].ToString();
         }
     }
